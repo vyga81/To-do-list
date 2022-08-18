@@ -1,0 +1,13 @@
+.Calculator {
+    background-color: rgb(243, 61, 20);
+    width: 190px;
+    border: 2px solid black;
+    margin: 200px auto;
+}
+
+.calcbg-ferrari-img {
+    width: 1539px;
+    height: 800px;
+}
+
+.calc-center {}

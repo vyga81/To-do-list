@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header/Header';
+import Greeter from './components/Greeter/Greeter'
+import Calculator from './components/Calculator/Calculator'
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Footer from './components/Footer/Footer';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/Greeter' element={<Greeter />} />
+        <Route path='/Calculator' element={<Calculator />} />
+        <Route path='/Home' element={<Home />} />
+        <Route path='/About' element={<About />} />
+        <Route path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
