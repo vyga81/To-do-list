@@ -6,8 +6,14 @@
 }
 
 .calcbg-ferrari-img {
-    width: 1539px;
+    width: 1530px;
     height: 800px;
+
 }
 
-.calc-center {}
+.calc-center {
+    padding-left: 600px;
+    padding-top: 300px;
+}
+
+/* .background_image {} */

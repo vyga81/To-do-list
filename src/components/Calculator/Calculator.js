@@ -9,8 +9,11 @@ function Calculator() {
   const [Sum, setSum] = useState(0)
 
   return (
-    <div >
-      <img src={image} className="calcbg-ferrari-img" alt='jpg' />
+    <div className="calcbg-ferrari-img " style={{
+      backgroundImage: `url(${image})`, alt: 'jpg', backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    }} >
+
       <div className="calc-center"   >
         <div className='calcFrame'><input name='value1' type='text' onChange={(e) => { setNum1(e.target.value) }} /></div>
         <div className='calcFrame'><input name='value2' type='text' onChange={(e) => { setNum2(e.target.value) }} /></div>

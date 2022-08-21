@@ -1,3 +1,9 @@
-.Greeter {
-    background-color: black;
+.night-city-img {
+    width: 1530px;
+    height: 800px;
+}
+
+.greeter-center {
+    padding-left: 600px;
+    padding-top: 300px;
 }
