@@ -7,6 +7,7 @@ import Calculator from './components/Calculator/Calculator'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Footer from './components/Footer/Footer';
+import Blogpost from './components/Blogpost/Blogpost';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/Greeter' element={<Greeter />} />
         <Route path='/Calculator' element={<Calculator />} />
         <Route path='/Home' element={<Home />} />
+        <Route path='/Blogpost' element={<Blogpost />} />
         <Route path='/About' element={<About />} />
         <Route path="*"
           element={
