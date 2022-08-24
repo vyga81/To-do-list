@@ -1,27 +1,29 @@
 import React from 'react';
-
+import { Link, Outlet } from 'react-router-dom';
+import image from '../../Images/mountains.png'
 import './Blogpost.css';
 
 const Blogpost = () => (
-  <div >
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active link-primary" aria-current="page" href="#">Blog</a>
+  <div className='Blogpost_background' style={{
+    backgroundImage: `url(${image})`, alt: 'jpg', backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  }}>
+
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <Link className="nav-link" to="/Blogpost/Blog">Blog</Link>
       </li>
-      <li class="nav-item">
-        <a class="nav-link link-success" href="#">Travel
-        </a>
+      <li className="nav-item">
+        <Link className="nav-link link-success" to="/Blogpost/Travel" >Travel
+        </Link>
       </li>
-      <li class="nav-item">
-        <a class="nav-link link-warning" href="#">How to</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-info" href="#">?</a>
+      <li className="nav-item">
+        <Link className="nav-link link-warning" to="/Blogpost/How to">How to</Link>
       </li>
     </ul>
+    <Outlet />
   </div>
 );
-
 
 
 export default Blogpost;

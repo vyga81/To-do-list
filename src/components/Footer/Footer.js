@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import './Footer.css';
 
 const Footer = () => (
   // < !--Footer -- >  fixed-bottom bg-white text-muted
-  <div className='test'>
+  <div className='footer-bg'>
     <footer className="text-center  text-lg-start ">
       {/* <!-- Section: Social media --> */}
       <section c="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">

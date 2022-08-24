@@ -2,13 +2,14 @@ import React from 'react';
 
 import './Header.css';
 import { Link } from "react-router-dom"
+import images from "../../Images/robot.svg"
 
 const Header = () => (
   <nav className="navbar navbar-expand-lg custom-bg">
     <div className="container-fluid">
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
-      </button><img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"></img>
+      </button><img src={images} alt="" width="30" height="24"></img>
 
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">

@@ -1,18 +1,23 @@
 import Button from '../Button/Button';
 import React, { useState } from 'react';
 import './Greeter.css';
-import image from '../../Images/nightcity2.jpg';
+
 
 
 const Greeter = () => {
   const [name, setName] = useState("");
   const [showGreeting, setShowGreeting] = useState(false);
 
+
+  // import image from '../../Images/nightcity2.jpg';
+  //   style = {{
+  //     backgroundImage: `url(${image})`, alt: 'jpg', backgroundSize: 'cover',
+  //       backgroundRepeat: 'no-repeat',
+  //     }
+  // }
+
   return (
-    <div className="night-city-img " style={{
-      backgroundImage: `url(${image})`, alt: 'jpg', backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-    }}>
+    <div className="night-city-img " >
       <div className='greeter-center'>
         <input
           style={{ display: "block" }}
@@ -27,7 +32,7 @@ const Greeter = () => {
           parentCallback={() => (name.length > 0 ? setShowGreeting(!showGreeting) : null)}
         />
 
-        <label style={{ display: "block" }}>
+        <label style={{ display: "block", color: 'yellow', fontSize: '60px' }}>
           {showGreeting ? `Hi ${name}` : ``}
         </label>
       </div>

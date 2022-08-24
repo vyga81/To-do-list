@@ -1,5 +1,7 @@
 .night-city-img {
-    width: 1530px;
+
+    background: linear-gradient(to right, rgba(185, 46, 175, 0.95), rgba(33, 218, 116, 0.95), rgba(185, 201, 17, 0.9), rgba(205, 140, 44, 0.85), rgba(243, 18, 18, 0.95));
+    width: 1519px;
     height: 800px;
 }
 
