@@ -6,14 +6,16 @@ let flexContainer = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    backgroundcolor: "darkorange",
+
 };
 
-let customW65 = {
-    width: "65%",
-};
-let customW35 = {
-    width: "35%",
-};
+// let customW65 = {
+//     width: "65%",
+// };
+// let customW35 = {
+//     width: "35%",
+// };
 
 const Todo = () => {
     const [newItem, setNewItem] = useState({
@@ -55,22 +57,23 @@ const Todo = () => {
     };
 
     return (
-        <div style={flexContainer}>
-            <div className="card w-25 text-bg-light">
-                <div className="card-body">
+        <div className="p-3 mb-2 bg-info text-white" style={flexContainer} >
+            <div className="card w-25 text-bg-light bg-warning p-2 text-white bg-opacity-75 " >
+                <div className="card-body" >
                     <h1 className="card-title">Todo-list</h1>
                     <div className="row p-3">
                         <form onSubmit={handleClick}>
                             <input
+                                // style={customW65}
                                 id="input"
                                 type="text"
-                                className="form-control"
-                                style={customW65}
+                                className="form-control bg-success p-2 text-dark bg-opacity-25"
                                 ref={itemInput}
                                 onChange={handleInput}
                                 value={newItem.name}
                             />
-                            <button className="btn btn-secondary" style={customW35} onClick={handleClick}>
+                            {/* style={customW35} */}
+                            <button className="btn btn-secondary bg-secondary p-2 text-white bg-opacity-75" onClick={handleClick}>
                                 Add to list
                             </button>
                         </form>
@@ -78,16 +81,16 @@ const Todo = () => {
                     <ul className="list-group">
                         {items.length > 0 ? (
                             items.map((item, idx) => (
-                                <li key={idx} className="list-group-item">
+                                <li key={idx} className="list-group-item bg-primary p-2 text-dark bg-opacity-75">
                                     {item.name}
                                     {/* prettier-ignore */}
-                                    <button className="btn btn-warning float-end" onClick={() => { deleteItem(idx); }}>
+                                    <button className="btn btn-warning float-end bg-danger p-2 text-dark bg-opacity-75" onClick={() => { deleteItem(idx); }}>
                                         Delete
                                     </button>
                                 </li>
                             ))
                         ) : (
-                            <div>Empty list!</div>
+                            <div className="bg-success p-2 text-dark bg-opacity-50"  >Empty list!</div>
                         )}
                     </ul>
                 </div>
