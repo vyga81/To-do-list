@@ -18,7 +18,7 @@ const Greeter = () => {
 
   return (
     <div className="night-city-img " >
-      <div className='greeter-center'>
+      <div className='greeter-center  '>
         <input
           style={{ display: "block" }}
           placeholder="What's your name?"
@@ -32,7 +32,7 @@ const Greeter = () => {
           parentCallback={() => (name.length > 0 ? setShowGreeting(!showGreeting) : null)}
         />
 
-        <label style={{ display: "block", color: 'yellow', fontSize: '60px' }}>
+        <label className='shadow-none p-3 mb-5 bg- rounded ' style={{ display: "block", color: 'yellow', fontSize: '60px' }}>
           {showGreeting ? `Hi ${name}` : ``}
         </label>
       </div>

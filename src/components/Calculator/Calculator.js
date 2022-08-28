@@ -1,24 +1,29 @@
 import React from 'react';
 import { useState } from 'react'
 import './Calculator.css';
-import image from '../../Images/ferrari.jpg'
-function Calculator() {
 
+function Calculator() {
+  const [Sum, setSum] = useState(0)
   const [Num1, setNum1] = useState(0)
   const [Num2, setNum2] = useState(0)
-  const [Sum, setSum] = useState(0)
+
+  const Delete = ('')
 
   return (
-    <div className="calcbg-ferrari-img " style={{
-      backgroundImage: `url(${image})`, alt: 'jpg', backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-    }} >
+    <div className="calculator-bg" >
 
-      <div className="calc-center"   >
+      <div className="calc-center "   >
         <div className='calcFrame'><input name='value1' type='text' onChange={(e) => { setNum1(e.target.value) }} /></div>
         <div className='calcFrame'><input name='value2' type='text' onChange={(e) => { setNum2(e.target.value) }} /></div>
-        <div className='calcFrame'><button variant="contained" onClick={() => setSum(parseInt(Num1) + parseInt(Num2))}>+</button></div>
-        <div className='totalFrame'><h5 >Total {Sum}</h5></div>
+        <div className='d-flex '>
+          <div className='calcFrame '><button variant="contained" onClick={() => setSum(parseInt(Num1) + parseInt(Num2))}>+</button></div>
+          <div className='calcFrame '><button variant="contained" onClick={() => setSum(parseInt(Num1) - parseInt(Num2))}>-</button></div>
+          <div className='calcFrame '><button variant="contained" onClick={() => setSum(parseInt(Num1) / parseInt(Num2))}>/</button></div>
+          <div className='calcFrame '><button variant="contained" onClick={() => setSum(parseInt(Num1) * parseInt(Num2))}>*</button></div>
+        </div>
+        <div className='totalFrame'><div >Total {Sum}</div></div>
+        <div className='calcFrame '><button variant="contained" onClick={() => setSum(Delete)}>Delete</button></div>
+
       </div>
 
     </div>
