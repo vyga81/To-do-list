@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/To-do-list/static/css/main.182049ff.css",
+    "main.js": "/To-do-list/static/js/main.67845115.js",
+    "static/media/mountains.png": "/To-do-list/static/media/mountains.00440ef4998b15e79497.png",
+    "static/media/Port.jpg": "/To-do-list/static/media/Port.2e8cb50e205e77f275e8.jpg",
+    "static/media/Team.jpg": "/To-do-list/static/media/Team.aa2d653eb1de33c80ba4.jpg",
+    "index.html": "/To-do-list/index.html",
+    "static/media/robot.svg": "/To-do-list/static/media/robot.99d3c58ea1614d0f57b1d9fed1f4c62c.svg",
+    "main.182049ff.css.map": "/To-do-list/static/css/main.182049ff.css.map",
+    "main.67845115.js.map": "/To-do-list/static/js/main.67845115.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.182049ff.css",
+    "static/js/main.67845115.js"
+  ]
+}

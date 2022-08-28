@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Greeter from './components/Greeter/Greeter'
@@ -19,7 +19,7 @@ import Todo from './components/Todo/Todo';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path='/Greeter' element={<Greeter />} />
@@ -41,7 +41,7 @@ function App() {
 
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
