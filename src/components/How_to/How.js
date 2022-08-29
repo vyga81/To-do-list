@@ -7,7 +7,7 @@ import './Home.css';
 
 const How = () => (
     <div className="Home" data-testid="Home">
-        <img src={image} className='How-nightcity2-img' alt='jpg' />
+        <img src={image} className='container How-nightcity2-img' alt='jpg' />
     </div>
 );
 
